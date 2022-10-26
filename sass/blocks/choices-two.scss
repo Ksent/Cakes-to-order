@@ -1,0 +1,310 @@
+.choices-two__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "PlayfairDisplay", serif;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: $bg-pink;
+  &::before {
+    padding-left: 7%;
+    padding-right: 3%;
+    font-family: "PlayfairDisplay", serif;
+    font-size: 30px;
+    letter-spacing: 0.01em;
+    line-height: 46px;
+    color: $bg-pink;
+    counter-increment: choices-number;
+    content: "0" counter(choices-number);
+  }
+}
+
+.choices-two__inner {
+  max-width: 240px;
+}
+
+.choices-two__controls {
+  top: 318px;
+}
+
+.choices-two__list {
+  width: 400%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: transform 0.6s ease-out;
+}
+
+.choices-two__item {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.choices-two__link {
+  position: relative;	
+  border-radius: 50%;
+}
+
+.choices-two__link--little {
+  margin-top: 110px;
+}
+
+.choices-two__link--medium {
+  margin-top: 65px;
+}
+
+.choices-two__link--big {
+  margin-top: 45px;
+}
+
+.choices-two__link--large {
+  margin-top: 17px;
+}
+
+.choices-two__number {
+  position: absolute;
+  color: #2f2f2f;
+}
+
+.choices-two__number--little {
+  top: 33px;
+  left: 43px;
+}
+
+.choices-two__number--middle {
+  top: 55px;
+  left: 67px;
+}
+
+.choices-two__number--big {
+  top: 66px;
+  left: 73px;
+}
+
+.choices-two__number--large {
+  top: 80px;
+  left: 87px;
+}
+
+.choices-two__text {
+  margin-top: 64px;
+  margin-bottom: 56px;
+  font-size: 14px;
+  color: rgba(47, 47, 47, 0.8);
+}
+
+.choices-two__button {
+  margin-bottom: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .choices-two__title {
+    padding-top: 28px;
+    padding-left: 6%;
+    position: absolute;
+    z-index: 5;   
+    font-size: 18px;
+    line-height: 0.96em;
+    &::before {
+      padding: 0;
+      font-size: 36px;
+    }
+  }
+  
+  .choices-two__title .hidden {
+    display: inherit;
+  }
+
+  .choices-two__inner {
+    max-width: 88%;
+  }
+  
+  .choices-two__controls {
+    display: none;
+  }
+  
+  .choices-two__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  
+  .choices-two__item {
+    width: auto;
+    margin-top: 60px;
+  }
+  
+  .choices-two__link {    
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      border-radius: 50%;
+      box-shadow: 0px 6px 15.52px 0.48px rgba(103, 12, 40, 0.14);
+    }
+  }
+  
+  .choices-two__link--little {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .choices-two__link--medium {
+    width: 138px;
+    height: 138px;
+  }
+  
+  .choices-two__link--big {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .choices-two__link--large {
+    width: 172px;
+    height: 172px;
+  }
+
+  .choices-two__image--little {
+    width: 76px;
+  }
+  
+  .choices-two__image--middle {
+    width: 110px;
+  }
+  
+  .choices-two__image--big {
+    width: 120px;
+  }
+  
+  .choices-two__image--large {
+    width: 140px;
+  }
+  
+  .choices-two__number {
+    font-size: 71%;
+  }
+  
+  .choices-two__number--little {
+    top: 34px;
+    left: 40px;
+  }
+  
+  .choices-two__number--middle {
+    top: 51px;
+    left: 60px;
+  }
+  
+  .choices-two__number--big {
+    top: 58px;
+    left: 66px;
+  }
+  
+  .choices-two__number--large {
+    top: 70px;
+    left: 76px;
+  }
+  
+  .choices-two__text {
+    margin: 5px 0 72px 16px;
+    font-size: 12px;
+    line-height: 1.6em;
+    text-align: left;
+  }
+  
+  .choices-two__button {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {  
+  .choices-two__title {
+    width: 105px;
+    padding-top: 46px;
+    padding-left: 7%;
+    font-size: 27px;
+    line-height: 1.1em;
+    &::before {
+      font-size: 215%;
+      line-height: 135%;      
+    }
+  }
+
+  .choices-two__inner {
+    width: 75%;
+  }
+  
+  .choices-two__item {
+    margin-top: 121px;
+  }
+  
+  .choices-two__link--little {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .choices-two__link--medium {
+    width: 186px;
+    height: 186px;
+  }
+  
+  .choices-two__link--big {
+    width: 209px;
+    height: 209px;
+  }
+  
+  .choices-two__link--large {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .choices-two__image--little {
+    width: 110px;
+    height: 122px;
+  }
+  
+  .choices-two__image--middle {
+    width: 154px;
+    height: 170px;
+  }
+  
+  .choices-two__image--big {
+    width: 173px;
+    height: 195px;
+  }
+  
+  .choices-two__image--large {
+    width: 200px;
+    height: 224px;
+  }
+  
+  .choices-two__number {
+    font-size: 102%;
+  }
+  
+  .choices-two__number--little {
+    top: 47px;
+    left: 57px;
+  }
+  
+  .choices-two__number--middle {
+    top: 66px;
+    left: 80px;
+  }
+  
+  .choices-two__number--big {
+    top: 81px;
+    left: 90px;
+  }
+  
+  .choices-two__number--large {
+    top: 98px;
+    left: 106px;
+  }
+  
+  .choices-two__text {
+    font-size: 18px;
+    margin: 12px 3px 144px 22px;
+  }
+}

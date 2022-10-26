@@ -1,0 +1,233 @@
+.page-footer {
+  margin-bottom: 0;
+  background-color: #898989;
+}
+
+.page-footer__wrapper {
+  width: 50%;
+  min-width: 282px;
+  margin: 0 auto;	
+  box-sizing: border-box;
+}
+
+.page-footer__logo {
+  margin-top: 33px;
+  display: inline-block;
+  font-family: "PlayfairDisplay", serif;
+  font-size: 28px;
+  line-height: 1.7em;
+  letter-spacing: 0.05em;
+  color: #ffffff;  
+  &:hover {
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.page-footer__list {
+  padding: 0;
+  color: #ffffff; 
+}
+
+.page-footer__list .hidden {
+  display: inherit;
+}
+
+.page-footer__item {
+  margin-bottom: 15.5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.page-footer__link {
+  color: #ffffff; 
+  &:hover {
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.page-footer__social {
+  margin: 20px 0 30px 0; 
+  display: flex;
+  align-items: flex-end;
+}
+
+.page-footer__social-link--indent {
+  margin-right: 19px;
+}
+
+.page-footer__pinterest-icon, .page-footer__vk-icon {
+  display: block;
+  fill: rgba(255, 255, 255, 0.4);
+  &:hover {
+    fill: #ffffff;
+  }
+}
+
+.page-footer__vk-icon {
+  stroke: rgba(255, 255, 255, 0.4);
+  &:hover {
+    stroke: #ffffff;
+  }
+}
+
+.page-footer__copyright {
+  width: 100%;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.352);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    width: 100%;
+    max-width: 728px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .page-footer__nav {
+    width: 100%;
+    padding: 29px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &::after {
+      content: "";
+      width: 85%;
+      position: absolute;
+      left: 7.5%;
+      right: 7.5%;
+      bottom: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+  
+  .page-footer__logo {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .page-footer__list {
+    width: 85%;
+    margin: 0;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .page-footer__list .hidden {
+    display: none;
+}
+  
+  .page-footer__item {
+    margin: 0;
+    margin-right: 12px;
+    font-size: 12px;
+  }  
+ 
+  .page-footer__social {
+    width: 72px;
+    height: 24px;
+    margin: 0;
+    order: 2;
+  }
+
+  .page-footer__social-link--indent {
+    margin-right: 18px;
+  }
+  
+  .page-footer__copyright {
+    width: 85px;
+    margin: 0;
+    margin-right: 4.5%;
+    padding: 21px 0 16px 0;
+    border-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    background-color: #e8e8e8;
+  }
+  
+  .page-footer__wrapper {
+    width: 90%;
+    max-width: 1222px;
+    justify-content: space-between;
+  }
+  
+  .page-footer__nav {
+    max-width: 980px;
+    padding: 0;
+    &::after {
+      content: none;
+    }
+  }
+  
+  .page-footer__logo {
+    margin: 25.5px 0 37.5px 0;
+    margin-right: 160px;
+    font-size: 28px;
+    color: #2d2829;
+    &:hover {
+      color: rgba(45, 40, 41, 0.4);
+    }
+  }
+
+  .page-footer__list {
+    padding-top: 0;
+  }
+
+  .page-footer__item {
+    margin-left: 12px;
+    margin-right: 0;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+   
+  .page-footer__link {
+    font-family: "Circe", sans-serif;
+    font-size: 16px;
+    color: #2d2829;	
+    &:hover {
+      color: rgba(45, 40, 41, 0.4);
+    }
+  }
+  
+  .page-footer__pinterest-icon, .page-footer__vk-icon {
+    fill: rgba(45, 40, 41, 0.4);
+    &:hover {
+      fill: #2d2829;
+    }
+  }  
+
+  .page-footer__vk-icon {
+    stroke: rgba(45, 40, 41, 0.4);
+    &:hover {
+      stroke: #2d2829;
+    }
+  }  
+  
+  .page-footer__copyright {
+    width: 100%;
+    margin-right: 0;
+    padding: 18px 0;
+    order: 3;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.352);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+

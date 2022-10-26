@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Circe";
+  src: local('Circe-Regular'),
+    url('../fonts/circe-regular.woff2') format('woff2'),
+    url('../fonts/Circe-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circe";
+  src: local('Circe-Bold'),
+    url('../fonts/circe-bold.woff2') format('woff2'),
+    url('../fonts/Circe-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IntroScriptR-H2Base";
+  src: local('IntroScriptR-H2Base'),
+    url('../fonts/introscriptr-h2base.woff2') format('woff2'),
+    url('../fonts/introscriptr-h2base.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local('OpenSans-Light'),
+    url('../fonts/opensans-light.woff2') format('woff2'),
+    url('../fonts/opensans-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: local('PlayfairDisplay-Bold'),
+    url('../fonts/playfairdisplay-bold.woff2') format('woff2'),
+    url('../fonts/playfairdisplay-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: local('PlayfairDisplay-BoldItalic'),
+    url('../fonts/playfairdisplay-bolditalic.woff2') format('woff2'),
+    url('../fonts/playfairdisplay-bolditalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local('Roboto-Regular'),
+    url('../fonts/roboto-regular.woff2') format('woff2'),
+    url('../fonts/roboto-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

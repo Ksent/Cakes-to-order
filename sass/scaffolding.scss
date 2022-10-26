@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Circe", sans-serif;
+  background-color: $bg-pinklight;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.events {
+  display: inline-block;
+  pointer-events: none;
+}
+
+@media (min-width: $tablet-width) {
+  .events {
+    pointer-events: inherit;
+  }
+}

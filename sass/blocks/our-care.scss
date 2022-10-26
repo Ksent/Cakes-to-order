@@ -1,0 +1,129 @@
+.our-care {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.our-care__wrapper {
+  width: 56%;
+  min-width: 282px;
+  margin: 0 auto;	
+}
+
+.our-care__title {
+  margin-top: 35px;
+  margin-bottom: 5px;
+  font-family: "PlayfairDisplay", serif;
+  color: #2d2829;
+}
+
+.our-care__subtitle {
+  margin: 0;
+  font-family: "IntroScriptR-H2Base";
+  font-size: 22px;
+  font-weight: normal;
+  color: #32313d;
+}
+
+.our-care__text {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.our-care__picture {
+  width: 461px;
+  background-image: url(../img/illustration1.svg);
+  background-repeat: no-repeat;
+}
+
+.our-care__plate-image {
+  width: 353px;
+  height: 125px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-image: url(../img/cake_320.png);
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .our-care {
+    margin-top: -82px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  .our-care__wrapper {
+    max-width: 500px;
+    margin: 0;
+    margin-top: 49px;
+    margin-left: 6%;
+  }
+  
+  .our-care__title {
+    margin-top: 0;
+    font-size: 28px;
+  }
+  
+  .our-care__subtitle {
+    margin-bottom: 5px;
+    font-size: 26px;
+  }
+   
+  .our-care__picture {
+    width: 418px;
+    height: 427px;    
+    background-image: url(../img/illustration1.svg);
+  }
+  
+  .our-care__plate-image {
+    width: 367px;
+    height: 368px;
+    margin: 0;
+    margin-top: 44px;
+    margin-left: 49px;  
+    background-image: url(../img/cake_768.png);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .our-care {
+    margin-top: -132px;
+  }
+
+  .our-care__wrapper {
+    max-width: 680px;
+    margin: 0 5.2%;
+  }
+    
+  .our-care__title {
+    margin-top: 102px;
+    margin-bottom: 18px;
+    font-size: 40px;
+  }
+  
+  .our-care__subtitle {
+    margin-bottom: 7px;
+    font-size: 35px;
+  }
+  
+  .our-care__text {
+    font-size: 20px;
+  }
+  
+  .our-care__picture {
+    width: 768px;
+    height: 773px;
+    background-image: url(../img/illustration2.svg);
+  }
+  
+  .our-care__plate-image {
+    width: 658px;
+    height: 658px;
+    margin-top: 74px;
+    margin-left: 110px;
+    background-image: url(../img/cake_1366.png);
+    background-position: 80%;
+  }
+}

@@ -1,0 +1,292 @@
+.our-cakes {
+  padding-bottom: 7%;	
+}
+
+.our-cakes__wrapper {
+  width: 90%;
+  min-width: 282px;
+  margin: 0 auto;	
+}
+
+.our-cakes__title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-family: "PlayfairDisplay", serif;
+  letter-spacing: 0.01em;
+  line-height: 275%;
+  text-align: center;
+  color: #2d2829;
+}
+
+.our-cakes__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.our-cakes__item {
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.our-cakes__classic-cakes { 
+  position: absolute;
+  top: -50%;
+  z-index: -1;
+}
+
+.our-cakes__mousse-cakes {
+  position: absolute;
+  top: -50%;
+  left: -30%;
+  z-index: -1;
+}
+
+.our-cakes__wedding-cakes {
+  position: absolute;
+  top: -22%;
+  left: -30%;
+  z-index: -1;
+}
+
+.our-cakes__man-cakes {
+  position: absolute;
+  top: -23%;
+  left: -3%;
+  z-index: -1;
+}
+
+.our-cakes__woman-cakes {
+  position: absolute;
+  top: -50%;
+  left: -30%;
+  z-index: -1;
+}
+
+.our-cakes__child-cakes {
+  position: absolute;
+  top: -40%;
+  z-index: -1;
+  background-color: #f4f2f5;
+}
+
+.our-cakes__description {
+  width: 282px;
+  height: 120px;
+  margin: 0;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.our-cakes__description-name {
+  margin: 0;
+  margin-left: 14px;
+  padding-top: 12px;
+  font-size: 14px;
+  color: #2d2829;
+}
+
+.our-cakes__description-number {
+  margin-left: 14px;
+  font-size: 75%;
+  color: rgba(45, 40, 41, 0.7);
+}
+
+@media (min-width: $tablet-width) {
+  .our-cakes__wrapper {
+    width: 100%;
+  }
+  
+  .our-cakes__title {
+    max-width: 728px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+    font-size: 28px;
+    text-align: left;	
+  }
+  
+  .our-cakes__list {
+    max-width: 728px;
+    margin: 0 auto;
+    grid-template-columns: 289px auto 289px;
+    grid-template-rows: repeat(4, 185px);
+    gap: 20px;
+  }
+  
+  .our-cakes__item {
+    box-shadow: 0px 10px 12.74px 0.26px rgba(163, 6, 60, 0.05);
+    &:first-child {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+    }
+    &:last-child {
+      grid-column: 2 / 4;
+      grid-row: 3 / 5;
+    }
+    &:hover {
+      box-shadow: 0px 10px 12.74px 0.26px rgba(163, 6, 60, 0.12);
+    }
+  }
+
+  .our-cakes__link {
+    display: block;
+  }
+  
+  .our-cakes__classic-cakes { 
+    top: 0;
+  }
+  
+  .our-cakes__mousse-cakes {
+    top: -17%;
+    left: -24%;
+  }
+  
+  .our-cakes__wedding-cakes {
+    top: -5%;
+    left: -41%;
+  }
+  
+  .our-cakes__man-cakes {
+    top: -9%;
+    left: -8%;
+  }
+  
+  .our-cakes__woman-cakes {
+    top: -18%;
+    left: -37%;
+  }
+  
+  .our-cakes__child-cakes {
+    top: -4.7%;
+    left: -10%;
+  }
+  
+  .our-cakes__text {
+    margin: 0;
+    display: inherit;
+    position: absolute;
+    right: 70px;
+    bottom: 20px;
+    font-size: 74.5%;
+    color: #2d2829;
+  }
+
+  .our-cakes__description {
+    width: 289px;
+    height: 185px;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+    
+  .our-cakes__description--size {
+    width: 420px;
+    height: 390px;
+  }
+  
+  .our-cakes__description-name {
+    margin-left: 25px;
+    padding-top: 25px;
+    font-size: 100%;
+  }
+  
+  .our-cakes__description-number {
+    margin-left: 25px;
+    font-size: 74%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .our-cakes__wrapper {
+    width: 90%;
+  }
+  
+  .our-cakes__title {
+    max-width: 1222px;
+    margin-bottom: 28px;
+    font-size: 40px;
+  }
+  
+  .our-cakes__list {
+    max-width: 1222px;
+    grid-template-columns: 483px 171px 483px;
+    grid-template-rows: repeat(4, 305px);
+    gap: 43px;
+  }
+  
+  .our-cakes__classic-cakes { 
+    top: -8%;
+    left: -1%;
+  }
+  
+  .our-cakes__mousse-cakes {
+    top: -27%;
+    left: -35%;
+  }
+  
+  .our-cakes__wedding-cakes {
+    top: -0.5%;
+    left: -42%;
+  }
+  
+  .our-cakes__man-cakes {
+    top: -14%;
+    left: -14%;
+  }
+  
+  .our-cakes__woman-cakes {
+    left: -15%;
+  }
+  
+  .our-cakes__child-cakes {
+    top: -4%;
+    left: -13%;
+  }
+  
+  .our-cakes__text {
+    margin-right: 4px;
+    right: 106px;
+    bottom: 33px;
+    font-size: 20px;
+  }
+  
+  .our-cakes__link-next {
+    width: 17px;
+    display: inherit;
+    position: absolute;
+    right: 69px;
+    bottom: 36px;
+    fill: #757575;
+    &:hover {
+      fill: $bg-pink;
+    }
+  }
+  
+  .our-cakes__description {
+    width: 485px;
+    height: 305px;
+  }
+  
+  .our-cakes__description--size {
+    width: 694px;
+    height: 653px;
+  }
+  
+  .our-cakes__description-name {
+    padding-top: 37px;
+    margin-left: 45px;
+    font-size: 24px;
+  }
+  
+  .our-cakes__description-number {
+    margin-left: 45px;
+    font-size: 20px;
+  }
+}
